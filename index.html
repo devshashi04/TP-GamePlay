@@ -78,16 +78,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/1fbbeedb956e4e031e9d77350ff29634.loader.js";
+      var loaderUrl = buildUrl + "/36566fb02b84e7e8346710c84af97eed.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/054d47cd5c992bccfb17208c23383472.data.unityweb",
-        frameworkUrl: buildUrl + "/59ab2a5546f5a64edc337f44d4e37b3d.framework.js.unityweb",
-        codeUrl: buildUrl + "/4e059d84d4fca525050dd2b03be1124a.wasm.unityweb",
+        dataUrl: buildUrl + "/096b814657051e0b7909c999e3a69380.data.unityweb",
+        frameworkUrl: buildUrl + "/52b6edd03fb7ce3c5ba4d03a0bd08edc.framework.js.unityweb",
+        codeUrl: buildUrl + "/07d434ffc45badc0618432b07317f74f.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "KPIS",
         productName: "Teen Patti",
-        productVersion: "0.131",
+        productVersion: "0.135",
         showBanner: unityShowBanner,
       };
 
@@ -127,6 +127,10 @@
 
       function LoadingCompleted() {
         window.parent.postMessage("LoadingCompleted", "*");
+      }
+
+      function FullScreen() {
+        window.parent.postMessage("ToggleFullScreen", "*");
       }
 
       function GamePlayIn() {
